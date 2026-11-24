@@ -1,3 +1,4 @@
 com\factoryflow\erp\BenchmarkProductionTest.class
+com\factoryflow\erp\BenchmarkSalesTest.class
 com\factoryflow\erp\controller\InventoryControllerTest.class
 com\factoryflow\erp\config\SecurityPasswordTest.class
