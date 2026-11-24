@@ -91,6 +91,7 @@ if (Test-Path -Path "$MAVEN_HOME" -PathType Container) {
   exit $?
 }
 
+
 if (! $distributionUrlNameMain -or ($distributionUrlName -eq $distributionUrlNameMain)) {
   Write-Error "distributionUrl is not valid, must end with *-bin.zip, but found $distributionUrl"
 }

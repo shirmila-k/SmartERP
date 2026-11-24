@@ -1,5 +1,7 @@
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\config\SecurityConfig.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\controller\InventoryController.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\controller\ProductionController.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\controller\PurchaseController.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\domain\entity\AuditLog.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\domain\entity\BomHeader.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\domain\entity\BomLine.java
@@ -22,7 +24,15 @@ C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\domai
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\domain\enums\SalesOrderStatus.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\domain\enums\UnitOfMeasure.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\domain\enums\UserRole.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\dto\BomResponse.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\dto\InventoryBalanceResponse.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\dto\ProductionRunRequest.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\dto\ProductionRunResponse.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\dto\PurchaseRequest.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\dto\PurchaseResponse.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\exception\GlobalExceptionHandler.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\exception\InsufficientStockException.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\exception\ResourceNotFoundException.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\repository\AuditLogRepository.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\repository\BomHeaderRepository.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\repository\BomLineRepository.java
@@ -38,5 +48,8 @@ C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\repos
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\repository\SalesOrderRepository.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\repository\StockLedgerRepository.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\repository\UserRepository.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\service\FifoValuationService.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\service\InventoryService.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\service\ProductionRunService.java
+C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\service\PurchaseService.java
 C:\Desktop\task\factory-flow-erp\backend\src\main\java\com\factoryflow\erp\SnackErpApplication.java
