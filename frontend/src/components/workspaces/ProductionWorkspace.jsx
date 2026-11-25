@@ -3,12 +3,24 @@ import { useAuth } from '../../context/AuthContext';
 import { api } from '../../services/api';
 import { Factory, ShoppingCart, AlertCircle, CheckCircle2, AlertTriangle, Layers, Percent } from 'lucide-react';
 
+const DEFAULT_FG = [
+  { id: 6, skuCode: 'FG-MURUKKU-200', name: 'Murukku 200 g', itemType: 'FINISHED_GOOD', unit: 'PACKET', sellingPrice: 50.00, gstRate: 5.00 },
+];
+
+const DEFAULT_RAW = [
+  { id: 1, skuCode: 'RM-FLOUR', name: 'Flour', itemType: 'RAW_MATERIAL', unit: 'KG', standardRate: 42.00 },
+  { id: 2, skuCode: 'RM-OIL', name: 'Cooking oil', itemType: 'RAW_MATERIAL', unit: 'LITRE', standardRate: 140.00 },
+  { id: 3, skuCode: 'RM-SPICE', name: 'Salt and spice mix', itemType: 'RAW_MATERIAL', unit: 'KG', standardRate: 200.00 },
+  { id: 4, skuCode: 'PK-POUCH-200', name: '200 g pouch', itemType: 'PACKAGING', unit: 'PIECE', standardRate: 2.50 },
+  { id: 5, skuCode: 'PK-CARTON-20', name: 'Carton (holds 20 packets)', itemType: 'PACKAGING', unit: 'PIECE', standardRate: 15.00 },
+];
+
 export default function ProductionWorkspace({ activeTab }) {
   const { currentUser } = useAuth();
 
-  const [finishedItems, setFinishedItems] = useState([]);
-  const [rawMaterials, setRawMaterials] = useState([]);
-  const [selectedFgId, setSelectedFgId] = useState('');
+  const [finishedItems, setFinishedItems] = useState(DEFAULT_FG);
+  const [rawMaterials, setRawMaterials] = useState(DEFAULT_RAW);
+  const [selectedFgId, setSelectedFgId] = useState(String(DEFAULT_FG[0].id));
   const [bom, setBom] = useState(null);
 
   // Production Run form

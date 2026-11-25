@@ -14,6 +14,7 @@ export default function App() {
 
   const [activeTab, setActiveTab] = useState('');
   const [isOffline, setIsOffline] = useState(false);
+  const [syncTimestamp, setSyncTimestamp] = useState(Date.now());
   const [queuedOrders, setQueuedOrders] = useState(() => {
     const saved = localStorage.getItem('offline_orders');
     return saved ? JSON.parse(saved) : [];
@@ -79,6 +80,7 @@ export default function App() {
 
     setQueuedOrders(remaining);
     localStorage.setItem('offline_orders', JSON.stringify(remaining));
+    setSyncTimestamp(Date.now());
     alert(`Offline Sync Complete! Successfully synced ${synced} order(s).`);
   };
 
@@ -148,6 +150,7 @@ export default function App() {
           queuedOrders={queuedOrders}
           setQueuedOrders={setQueuedOrders}
           onSyncOffline={handleSyncOffline}
+          syncTimestamp={syncTimestamp}
         />
       )}
 

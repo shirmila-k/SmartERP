@@ -59,26 +59,26 @@ export default function Layout({ activeTab, setActiveTab, isOffline, queuedOrder
   return (
     <div className="min-h-screen flex flex-col bg-[#F8FAF6]">
       {/* Top Header */}
-      <header className="bg-white border-b border-[#E3ECD7] sticky top-0 z-30 px-4 py-2.5 flex items-center justify-between shadow-sm">
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-[#728156] flex items-center justify-center text-white font-bold text-lg shadow-sm">
+      <header className="bg-white border-b border-[#E3ECD7] sticky top-0 z-30 px-3 py-2 sm:px-4 sm:py-2.5 flex items-center justify-between shadow-sm">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#728156] flex items-center justify-center text-white font-bold text-base sm:text-lg shadow-sm">
             F
           </div>
           <div>
-            <h1 className="font-extrabold text-[#1F2617] text-base leading-tight tracking-tight flex items-center gap-2">
+            <h1 className="font-extrabold text-[#1F2617] text-sm sm:text-base leading-tight tracking-tight flex items-center gap-1.5 sm:gap-2">
               FactoryFlow ERP
-              <span className="text-[10px] font-semibold bg-[#CFE1B9] text-[#353D23] px-2 py-0.5 rounded-full">
+              <span className="text-[10px] font-semibold bg-[#CFE1B9] text-[#353D23] px-1.5 py-0.5 rounded-full hidden xs:inline-block">
                 Phase 5
               </span>
             </h1>
-            <p className="text-[11px] text-[#5F6D44] font-medium hidden sm:block">
+            <p className="text-[10px] sm:text-[11px] text-[#5F6D44] font-medium hidden sm:block">
               Snack Manufacturing • Order to Audit
             </p>
           </div>
         </div>
 
         {/* Center / Right controls */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           {/* Offline indicator if relevant */}
           {typeof isOffline !== 'undefined' && (
             <div className="flex items-center gap-2">
