@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F8FAF6;
+    color: #1F2617;
+  }
+}
+
+/* Custom Stitch styling utilities */
+.stitch-card {
+  background: #FFFFFF;
+  border: 1px solid #E3ECD7;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(31, 38, 23, 0.05);
+}
+
+.stitch-pill {
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}

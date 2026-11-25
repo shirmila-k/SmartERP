@@ -1,4 +1,5 @@
 com\factoryflow\erp\controller\PaymentController.class
+com\factoryflow\erp\controller\CommonLookupController.class
 com\factoryflow\erp\dto\ApproveOrderRequest.class
 com\factoryflow\erp\dto\report\SalesRegisterReport$SalesRegisterReportBuilder.class
 com\factoryflow\erp\dto\SalesOrderResponse.class
@@ -17,6 +18,7 @@ com\factoryflow\erp\dto\PaymentRequest$PaymentRequestBuilder.class
 com\factoryflow\erp\dto\CustomerOutstandingResponse$CustomerOutstandingResponseBuilder.class
 com\factoryflow\erp\dto\ApproveOrderRequest$AdjustedLine.class
 com\factoryflow\erp\dto\report\ReceivablesAgeingReport$CustomerAgeing.class
+com\factoryflow\erp\config\CorsConfig.class
 com\factoryflow\erp\dto\report\ReceivablesAgeingReport$PaymentCollected.class
 com\factoryflow\erp\domain\entity\Payment.class
 com\factoryflow\erp\dto\PaymentResponse.class
